@@ -1,0 +1,15 @@
+#searchBar {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchArt {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchNav {
+    justify-content: center;
+}
