@@ -1,0 +1,26 @@
+.art {
+    padding: 1px 34px 1px 34px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#searchBar {
+    width: 97%;
+    border-radius: 5px;
+    height: 52px;
+    font-size: 25px;
+}
+
+#searchArt {
+    width: 54px;
+    height: 57px;
+    font-size: 20px;
+    border-radius: 10px;
+}
