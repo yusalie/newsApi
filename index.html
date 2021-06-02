@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="..\assets\styles\styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="..\assets\styles\mobile.css"/>
+    <link rel="stylesheet" href="..\assets\styles\animation.css">
 </head>
 
 <body onload="populate()">
     <div id="searchNav">
+        
         <div><input type="text" id="searchBar" placeholder="search for an article/keyword(s)"></div>
         <div id="searchBtn"><button id="searchArt" onclick="search()"> <i class="fa fa-search"></i>
         </button>
@@ -29,10 +31,16 @@
                 <option value="entertainment">Entertainment</option>
                 <option value="business">Business</option>
             </select>
+            <select name="" id="countDrop" onchange="window.location.reload()">
+                <option value="us">United States</option>
+                <option value="ae">Arabian Emirates</option>
+                <option value="kr">Korea</option>
+                <option value="fr">France</option>
+                <option value="jp">Japan</option>
+                <option value="ru">Russia</option>
+                <option value="cn">China</option>
+            </select>
         </h1>
-        <form action="" method="post">
-            
-        </form>
     </div>
 <div id="cards">
     <div id="articles">

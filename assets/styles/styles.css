@@ -77,3 +77,11 @@ img{
     font-style: oblique;
     border-radius: 8px;
 }
+
+#countDrop{
+    width: 165px;
+    height: 33px;
+    font-size: 23px;
+    font-style: oblique;
+    border-radius: 8px;
+}

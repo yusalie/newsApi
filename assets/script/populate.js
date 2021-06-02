@@ -5,13 +5,16 @@ let popCard4 = document.getElementById("articles4");
 let popCard5 = document.getElementById("articles5");
 let popCard6 = document.getElementById("articles6");
 let option = document.getElementById("dropdown").value;
+let countryOpt = document.getElementById("countDrop").value
 
 function populate() {
     //assigned variable for api key
     const key = "&apiKey=e9812236a72c43d6855eda46082ae0d8"
     //link for the api to query
-    const link = "https://newsapi.org/v2/top-headlines?category="
-    const url = link + option + key
+    const link = "https://newsapi.org/v2/top-headlines?"
+    const country = "country=" + countryOpt
+    const category = "&category=" + option
+    const url = link + country + category + key
     const request = new Request(url);
     fetch(request)
     //turns resp into JavaScript object
@@ -24,7 +27,7 @@ function populate() {
             let popArt = `
         <div class="art">
           <h1>${JSON.stringify(article.articles[0].title)}</h1>
-          <h2>${JSON.stringify(article.articles[0].author)}</h2>
+          <h2>${JSON.stringify(article.articles[0].author)}</h2>+++++
           <img src=${JSON.stringify(article.articles[0].urlToImage)} alt=${JSON.stringify(article.articles[0].title)} id="popCard"/>
           <p>${JSON.stringify(article.articles[0].description)}</p>
           <a href=${JSON.stringify(article.articles[0].url)} target="_blank">Read full article</a>
