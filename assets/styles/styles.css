@@ -60,3 +60,20 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+img{
+    max-height: 200px;
+}
+
+#select {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#dropdown {
+    width: 150px;
+    height: 33px;
+    font-size: 23px;
+    font-style: oblique;
+    border-radius: 8px;
+}

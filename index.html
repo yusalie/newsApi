@@ -11,13 +11,28 @@
     <link rel="stylesheet" href="..\assets\styles\mobile.css"/>
 </head>
 
-<body>
+<body onload="populate()">
     <div id="searchNav">
         <div><input type="text" id="searchBar" placeholder="search for an article/keyword(s)"></div>
         <div id="searchBtn"><button id="searchArt" onclick="search()"> <i class="fa fa-search"></i>
         </button>
         </div>
-        
+    </div>
+    <div id="select">
+        <h1>
+            <select name="" id="dropdown" onchange="window.location.reload()">
+                <option value="technology">Technology</option>
+                <option value="science">Science</option>
+                <option value="sports">Sport</option>
+                <option value="health">Health</option>
+                <option value="general">General</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="business">Business</option>
+            </select>
+        </h1>
+        <form action="" method="post">
+            
+        </form>
     </div>
 <div id="cards">
     <div id="articles">
@@ -43,5 +58,6 @@
     
 </body>
 <script src="..\assets\script\search.js"></script>
+<script src="..\assets\script\populate.js"></script>
 
 </html>
