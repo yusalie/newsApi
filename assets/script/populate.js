@@ -20,6 +20,7 @@ function populate() {
         mode: "cors",
         headers: {
            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Access-Control-Allow-Origin': 'https://netlify.app'
         },
       })
     //turns resp into JavaScript object
