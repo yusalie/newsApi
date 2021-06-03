@@ -16,7 +16,12 @@ function populate() {
     const category = "&category=" + option
     const url = link + country + category + key
     const request = new Request(url);
-    fetch(request)
+    fetch(request,{
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
     //turns resp into JavaScript object
         .then(resp => resp.json())
         // returns object of the data
