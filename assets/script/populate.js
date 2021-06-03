@@ -34,7 +34,7 @@ function populate() {
             let popArt = `
         <div class="art">
           <h1>${JSON.stringify(article.articles[0].title)}</h1>
-          <h2>${JSON.stringify(article.articles[0].author)}</h2>+++++
+          <h2>${JSON.stringify(article.articles[0].author)}</h2>
           <img src=${JSON.stringify(article.articles[0].urlToImage)} alt=${JSON.stringify(article.articles[0].title)} id="popCard"/>
           <p>${JSON.stringify(article.articles[0].description)}</p>
           <a href=${JSON.stringify(article.articles[0].url)} target="_blank">Read full article</a>
