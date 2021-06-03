@@ -19,7 +19,9 @@ function populate() {
     fetch(request,{
         mode: "cors",
         headers: {
-          "Content-Type": "application/json",
+           "Access-Control-Allow-Origin" : "*",
+    "Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
         },
       })
     //turns resp into JavaScript object
