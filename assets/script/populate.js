@@ -11,7 +11,7 @@ function populate() {
     //assigned variable for api key
     const key = "&apiKey=e9812236a72c43d6855eda46082ae0d8"
     //link for the api to query
-    const link = "cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?"
+    const link = "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?"
     const country = "country=" + countryOpt
     const category = "&category=" + option
     const url = link + country + category + key
