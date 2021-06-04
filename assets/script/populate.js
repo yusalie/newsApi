@@ -28,6 +28,8 @@ function populate() {
         headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Origin': 'https://zen-thompson-80ff85.netlify.app',
+             'Access-Control-Allow-Methods': 'POST', 'GET', 'OPTIONS',
+             'Access-Control-Allow-Headers': 'X-PINGOTHER, Content-Type',
         },
       })
     //turns resp into JavaScript object
