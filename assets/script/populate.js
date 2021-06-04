@@ -21,7 +21,6 @@ function populate() {
         headers: {
            'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Origin': 'https://brave-lalande-c047f5.netlify.app',
         },
       })
     //turns resp into JavaScript object
