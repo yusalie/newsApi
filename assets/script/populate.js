@@ -16,14 +16,7 @@ function populate() {
     const category = "&category=" + option
     const url = link + country + category + key
     const request = new Request(url);
-    fetch(request,{
-        mode: "cors",
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Origin': 'https://zen-thompson-80ff85.netlify.app',
-             'Access-Control-Allow-Methods': 'GET',
-        }
-      })
+    fetch(request)
     //turns resp into JavaScript object
         .then(resp => resp.json())
         // returns object of the data
