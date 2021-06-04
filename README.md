@@ -13,6 +13,7 @@
 # for more information visit: https://answers.netlify.com/t/getting-error-426-from-newsapi-org/16101
 
 # Installation/Usage:
-1. Download main branch of git repo.
-2. Extract main zip file
-3. run index.html in live server
+1. vist: https://github.com/yusalie/newsApi/tree/main
+2. Download/clone main branch of git repo.
+3. Extract main zip file
+4. run index.html in live server
