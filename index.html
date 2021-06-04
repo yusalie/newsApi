@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News API Data</title>
-    <link rel="stylesheet" href="../assets/styles/styles.css" />
+    <!-- importing css and font-awesome library -->
+    <link rel="stylesheet" href="..\assets\styles\styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/styles/mobile.css"/>
+    <link rel="stylesheet" href="..\assets\styles\mobile.css"/>
 </head>
 
 <body onload="populate()">
@@ -19,8 +20,9 @@
         </button>
         </div>
     </div>
+    <!-- dropdown div which contains the options for the category and location -->
     <div id="select">
-        <h1>
+        <h1 id="selection">
             <select name="" id="dropdown" onchange="window.location.reload()">
                 <option value="technology">Technology</option>
                 <option value="science">Science</option>
@@ -41,6 +43,7 @@
             </select>
         </h1>
     </div>
+    <!-- div container which contains the cards of the articles -->
 <div id="cards">
     <div id="articles">
         
@@ -64,7 +67,7 @@
     
     
 </body>
-<script src="../assets/script/populate.js"></script>
-<script src="../assets/script/search.js"></script>
-
+<!-- importing the JavaScript files -->
+<script src="..\assets\script\search.js"></script>
+<script src="..\assets\script\populate.js"></script>
 </html>
