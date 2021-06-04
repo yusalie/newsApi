@@ -1,4 +1,4 @@
-# newsApi
+# newsApi overview
 # populate.js loads only the top headlines of the technology category.
 # search.js loads the search of results of everything with that specific query string.
 # the dropdown controls which article category is displayed if the user does not use the search function.
@@ -11,3 +11,8 @@
 # when the code is loaded from the normal file it gives a cors error, using a live server in Atom or visual studio code and changing 127.0.0.1 will fix this error.
 # deployment seems to be an issue because as of 22 May 2020 liberties were changed for free developers.
 # for more information visit: https://answers.netlify.com/t/getting-error-426-from-newsapi-org/16101
+
+# Installation/Usage:
+1. Download main branch of git repo.
+2. Extract main zip file
+3. run index.html in live server
