@@ -7,11 +7,12 @@ let popCard6 = document.getElementById("articles6");
 let option = document.getElementById("dropdown").value;
 let countryOpt = document.getElementById("countDrop").value
 const xhr = new XMLHttpRequest();
-const url = 'https://newsapi.org/v2/top-headlines?';
+xhr.open('POST', 'https://newsapi.org/v2/top-headlines?');
+xhr.setRequestHeader('X-PINGOTHER', 'pingpong');
+xhr.setRequestHeader('Content-Type', 'application/xml');
+xhr.onreadystatechange = handler;
+xhr.send('<person><name>Arun</name></person>');
 
-xhr.open('GET', url);
-xhr.onreadystatechange = someHandler;
-xhr.send();
 
 function populate() {
     //assigned variable for api key
