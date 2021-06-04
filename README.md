@@ -12,4 +12,4 @@
 # deployment seems to be an issue because as of 22 May 2020 liberties were changed for free developers.
 # for more information visit: answers.netlify.com/getting-error-from-newsapi-org/16101/4
 # the app may run if the link: https://cors-anywhere.herokuapp.com/ is while the web app is running in a seperate page.
-# the deployed link is named: zen-thompson-80ff85.netlify.app
+# the deployed link is named: https://zen-thompson-80ff85.netlify.app/
