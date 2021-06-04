@@ -18,12 +18,7 @@ function search() {
     const url = link + searchBar.value + from + popularity + key
     const request = new Request(url);
     console.log(searchBar.value);
-    fetch(request,{
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+    fetch(request)
     //turns resp into JavaScript object
         .then(resp => resp.json())
         // returns object of the data
