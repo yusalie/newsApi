@@ -19,9 +19,7 @@ function populate() {
     fetch(request,{
         mode: "cors",
         headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Content-Type',
-            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
+            'Access-Control-Allow-Origin': 'https://zen-thompson-80ff85.netlify.app',
         },
       })
     //turns resp into JavaScript object
