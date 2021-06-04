@@ -6,6 +6,12 @@ let popCard5 = document.getElementById("articles5");
 let popCard6 = document.getElementById("articles6");
 let option = document.getElementById("dropdown").value;
 let countryOpt = document.getElementById("countDrop").value
+const xhr = new XMLHttpRequest();
+const url = 'https://newsapi.org/v2/top-headlines?';
+
+xhr.open('GET', url);
+xhr.onreadystatechange = someHandler;
+xhr.send();
 
 function populate() {
     //assigned variable for api key
@@ -19,6 +25,7 @@ function populate() {
     fetch(request,{
         mode: "cors",
         headers: {
+            'Access-Control-Allow-Origin': '*'
             'Access-Control-Allow-Origin': 'https://zen-thompson-80ff85.netlify.app',
         },
       })
