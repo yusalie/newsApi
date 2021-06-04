@@ -12,7 +12,7 @@ function search() {
     //assigned variable for api key
     const key = "&apiKey=e9812236a72c43d6855eda46082ae0d8"
     //link for the api to query
-    const link = "https://newsapi.org/v2/everything?q="
+    const link = "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q="
     const from = "&from=2021-05-01"
     const popularity = "sortBy=popularity"
     const url = link + searchBar.value + from + popularity + key
